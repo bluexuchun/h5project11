@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>ROUGE COCO FLASH</title>
+  <script src="js/util.js"></script>
+  <script src="js/tongji.js"></script>
+</head>
+<script src="js/media.min.js"></script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/test.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="fonts/fonts.css">
+<body>
+
+  <div class="main" id="main">
+    <div class="model-right">
+      <div class="right-content">
+        <div class="right-title">
+          <img class="right-fight" src="./img/answer/fight.png" alt="">
+        </div>
+        <div class="right-score">得分</div>
+        <div class="right-num">100</div>
+        <img class="icon-btn" onclick="test.toquestion()" src="./img/answer/goquestion.png" alt="">
+      </div>
+    </div>
+    <div class="model-wrong">
+        <div class="wrong-content">
+          <div class="wrong-title">
+            <img class="wrong-fight" src="./img/answer/fight.png" alt="">
+          </div>
+          <div class="wrong-score">得分</div>
+          <div class="wrong-num"></div>
+          <img class="wrong-again" src="./img/answer/again.png" alt="">
+          <img class="wrong-btn wrong-top" src="./img/answer/goquestion.png" onclick="test.toquestion()" alt="">
+          <img class="wrong-btn wrong-bottom" src="./img/answer/restart.png" onclick="test.restart()" alt="">
+        </div>
+      </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            
+        </div>
+    </div>
+    <div class="progress">
+      <div class="progress-back">
+          <img class="icon-back icon-left" onclick="test.stoPrev()" src="./img/left.png" alt="">
+      </div>
+      <div class="progress-line">
+          <div class="line">
+              <div class="line-acture"></div>
+          </div>
+          <div class="progress-text"></div>
+      </div>
+      <div class="progress-finish">
+          <img class="icon-back icon-right" onclick="test.stoNext()" src="./img/right.png" alt="">
+          <img class="icon-back icon-quit" onclick="test.finishCourse()" src="./img/quit.png" alt="">
+      </div>
+  </div>
+  </div>
+    
+
+  <script src="js/jquery.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/is.js"></script>
+  <script src="js/test.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/watermake.js"></script>
+  <!--禁用微信分享按钮-->
+  <script src="http://chanelchinaqy.oss-cn-hangzhou.aliyuncs.com/WechatQY/scripts/HideWechatOptionMenu.js"></script>
+  <script language="javascript">
+      let theme,optionsList
+      var swiper = new Swiper('.swiper-container', {
+          observer:true,
+          observeParents:true,
+          noSwiping : true
+      })
+      $(function(){
+        test._init()
+        store.getUserInfo()
+      })
+  </script>
+</body>
+
+</html>

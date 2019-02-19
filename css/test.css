@@ -1,0 +1,229 @@
+.main{
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    padding-bottom:2.5rem;
+    font-family: "ABChanel-PB-Regular-S"
+}
+.swiper-container{
+    width:100%;
+    height:100%;
+}
+.swiper-slide{
+    width:100%;
+    height:100%;
+}
+.content{
+    width:100%;
+    height:100%;
+}
+.content-title{
+    width:100%;
+    height:30%;
+    color:#fff;
+    font-size:1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding:0rem 1.5rem;
+}
+.content-type{
+}
+.content-options{
+    width:100%;
+    height:70%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.options-item{
+    width:85%;
+    height:5rem;
+    box-sizing: border-box;
+    padding:0rem 4rem;
+    border:1.5px solid #7D7D7D;
+    border-radius:15rem;
+    margin:1rem 0rem;
+    color:#000;
+    font-size:1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-family: 'STHeiti';
+}
+
+.progress{
+    width:100%;
+    height:2.5rem;
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+}
+.progress-back,.progress-finish{
+    width:4rem;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon-back{
+    width:1.5rem;
+    transition: all 0.4s;
+}
+.progress-line{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding:0rem 1rem;
+}
+.line{
+    width:100%;
+    height:.4rem;
+    background: #eaeaea;
+    border-radius: 15px;
+    position: relative;
+}
+.line-acture{
+    width:0%;
+    height:100%;
+    background: #000;
+    border-radius: 15px;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index:4;
+    transition: all 0.4s;
+}
+.progress-text{
+    font-size:.8rem;
+    margin-top:.2rem;
+}
+.icon-quit{
+    display: none;
+}
+.answer{
+    width:4rem;
+    height:100%;
+    position: absolute;
+    right:0rem;
+    top:0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.answer-wrong{
+    width:4rem;
+    height:100%;
+    position: absolute;
+    left:0rem;
+    top:0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon-answer{
+    width:2.7rem;
+    opacity: 0;
+    transition: all .5s;
+}
+.model-right,.model-wrong{
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index:10;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.7)
+
+}
+.right-content{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+}
+.right-title{
+    width:5rem;
+    padding:2rem 0rem;
+}
+.right-fight{
+    width:100%;
+}
+.right-score{
+    font-size:1rem;
+    color:#060000;
+    margin-bottom:.3rem;
+    font-weight:600;
+}
+.right-num{
+    font-size:3rem;
+    color:#060000;
+    font-weight:600;
+}
+.icon-btn{
+    width:18rem;
+    margin:3rem auto;
+}
+.wrong-content{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+}
+.wrong-title{
+    width:5rem;
+    padding:2rem 0rem;
+}
+.wrong-fight{
+    width:100%;
+}
+.wrong-score{
+    font-size:1rem;
+    color:#060000;
+    margin-bottom:.3rem;
+    font-weight:600;
+}
+.wrong-num{
+    font-size:3rem;
+    color:#060000;
+    font-weight:600;
+}
+.wrong-btn{
+    width:18rem;
+}
+.wrong-again{
+    width:15rem;
+    margin:.5rem .8rem;
+}
+.wrong-top{
+    margin-top:2rem;
+    margin-bottom:1rem;
+}
+.wrong-bottom{
+    margin-bottom:2rem;
+}

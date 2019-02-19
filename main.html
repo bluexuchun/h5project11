@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>ROUGE COCO FLASH</title>
+  <script src="js/util.js"></script>
+  <script src="js/tongji.js"></script>
+</head>
+<script src="js/media.min.js"></script>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<body>
+
+  <div class="main" id="main">
+    <div class="square-model">
+      <img class="icon-order" src="./img/square/order.png" alt="">
+      <img class="order-btn" onclick="main.hideModel()" src="./img/order-btn.png" alt="">
+    </div>
+    <div class="square-top">
+      <div class="square-item square-right squaret">
+        <div class="square-box" data-id="1" data-islearn="nolearn">
+            <div class="square-shadow"></div>
+            <img class="square-icon" src="./img/square/1.png" alt="">
+            <img class="square-btn" onclick="main.isOrder(this)" src="./img/square/1btn.png" alt="">
+        </div>
+      </div>
+      <div class="square-item square-left squaret">
+        <div class="square-box" data-id="2" data-islearn="nolearn">
+          <div class="square-shadow"></div>
+          <img class="square-icon" src="./img/square/2.png" alt="">
+          <img class="square-btn" onclick="main.isOrder(this)" src="./img/square/2btn.png" alt="">
+        </div>
+      </div>
+      <div class="square-item square-right squareb">
+        <div class="square-box" data-id="3" data-islearn="nolearn">
+            <div class="square-shadow"></div>
+            <img class="square-icon" src="./img/square/3.png" alt="">
+            <img class="square-btn" onclick="main.isOrder(this)" src="./img/square/3btn.png" alt="">
+        </div>
+      </div>
+      <div class="square-item square-left squareb">
+        <div class="square-box" data-id="4" data-islearn="nolearn">
+          <div class="square-shadow"></div>
+          <img class="square-icon" src="./img/square/4.png" alt="">
+          <img class="square-btn" onclick="main.isOrder(this)" src="./img/square/4btn.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="square-bottom">
+      <div class="square-box" data-id="5" data-islearn="nolearn">
+        <div class="square-shadow"></div>
+        <img class="square-icon" src="./img/square/5.png" alt="">
+        <img class="square-btn square-sbtn" onclick="main.isOrder(this)" src="./img/square/5btn.png" alt="">
+      </div>
+    </div>
+  </div>
+    
+
+  <script src="js/jquery.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/is.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/watermake.js"></script>
+  <script src="js/store.js"></script>
+  <!--禁用微信分享按钮-->
+  <script src="http://chanelchinaqy.oss-cn-hangzhou.aliyuncs.com/WechatQY/scripts/HideWechatOptionMenu.js"></script>
+  <script language="javascript">
+      $(function(){
+        main.init()
+        store.getUserInfo()
+      })
+  </script>
+</body>
+
+</html>

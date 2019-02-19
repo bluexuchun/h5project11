@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <script src="js/util.js"></script>
+  <script src="js/tongji.js"></script>
+  <script src="js/media.min.js"></script>
+  <title>ROUGE COCO FLASH</title>
+</head>
+<link rel="stylesheet" href="css/detail.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/video-js.css">
+<body>
+    <div class="main" id="main">
+        <div class="content-type1 typehide">
+            <img class="type1-img" src="./img/content/new/content.png" alt="">
+        </div>
+        <div class="swiper-container type2 type2hide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-no-swiping">
+                    <div class="model2">
+                        <img class="model2-content" src="./img/content/upgrade/model-content.png" alt="">
+                        <img class="model2-btn" onclick="detail.hideModel2()" src="./img/order-btn.png" alt="">
+                    </div>
+                    <div class="content-type2">
+                        <img class="type2-img" src="./img/content/upgrade/head.png" alt="">
+                        <div class="type-group">
+                            <div class="content-model" onclick="detail.hideDetail()">
+                                
+                            </div>
+                        </div>
+                        <div class="type2-tips">
+                            <img class="type2-btn" src="./img/content/upgrade/up-btn.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-no-swiping">
+                    <img class="short-img" src="./img/content/upgrade/new-kh.png" alt="">
+                </div>
+                <div class="swiper-slide swiper-no-swiping">
+                    <div class="long-spe">
+                        <img class="long-img" src="./img/content/upgrade/new-upgrade.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-type3 typehide">
+            <div class="long-box">
+                <img class="long-img" src="./img/content/contact/contact-skill.png" alt="">
+            </div>
+        </div>
+        <div class="content-type4 typehide">
+            <div class="long-box">
+                <img class="long-img" src="./img/content/contact/make-skill.png" alt="">
+            </div>
+        </div>
+        <div class="content-type5 typehide">
+            <div class="model">
+                <img class="icon-order" src="./img/content/contact/order.png" alt="">
+                <img class="order-btn" onclick="detail.hideModel()" src="./img/order-btn.png" alt="">
+            </div>
+            <div class="model3">
+                <img class="model3-content" src="./img/square/test-content.png" alt="">
+                <div class="model3-btngroup">
+                    <img class="order-btn" onclick="detail.linkToTest()" src="./img/order-btn.png" alt="">
+                    <img class="order-btn" onclick="detail.hideModel3()" src="./img/square/btn-cancel.png" alt="">
+                </div>
+                
+            </div>
+            <div class="long-box">
+                <img class="long-img" src="./img/content/contact/keepinmind.png" alt="">
+                <div class="choose-item choose-1" data-id="1" data-choose="nochoose" onclick="detail.chooseGou(this)">
+                    <img class="icon-choose" src="./img/content/contact/select.png" alt="">
+                </div>
+                <div class="choose-item choose-2" data-id="2" data-choose="nochoose" onclick="detail.chooseGou(this)">
+                    <img class="icon-choose" src="./img/content/contact/select.png" alt="">
+                </div>
+                <div class="choose-item choose-3" data-id="3" data-choose="nochoose" onclick="detail.chooseGou(this)">
+                    <img class="icon-choose" src="./img/content/contact/select.png" alt="">
+                </div>
+                <div class="choose-item choose-4" data-id="4" data-choose="nochoose" onclick="detail.chooseGou(this)">
+                    <img class="icon-choose" src="./img/content/contact/select.png" alt="">
+                </div>
+                <div class="video">
+                    <video id="my-video" class="video-js" controls preload="auto" style="width:100%;height:100%;"
+                        poster="./img/content/contact/video.png" data-setup="{}" x5-video-player-type='h5' x5-video-player-fullscreen='true'>
+                        <source src="https://play.widiazine.cn/upload/videos/2018/11/hPRdgMogx5XC8WvKJ2Sr_04_67689a5e83142c97aec753a61cb7720f_video_360p_converted.mp4" type='video/mp4'>
+                    </video>
+                </div>
+                <img class="test-btn" onclick="detail.startTest()" src="./img/content/contact/test-btn.png"></img>
+            </div>
+        </div>
+        <div class="icon-down">
+            <img class="icond" src="./img/down.png" alt="">
+        </div>
+        <div class="progress">
+            <div class="progress-back">
+                <img class="icon-back icon-left" onclick="detail.stoPrev()" src="./img/left.png" alt="">
+            </div>
+            <div class="progress-line">
+                <div class="line">
+                    <div class="line-acture"></div>
+                </div>
+                <div class="progress-text"></div>
+            </div>
+            <div class="progress-finish">
+                <img class="icon-back icon-right" onclick="detail.stoNext()" src="./img/right.png" alt="">
+                <img class="icon-back icon-quit" onclick="detail.finishCourse()" src="./img/quit.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/is.js"></script>
+    <script src="js/detail.js"></script>
+    <script src="js/watermake.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/store.js"></script>
+    <!--禁用微信分享按钮-->
+    <script src="http://chanelchinaqy.oss-cn-hangzhou.aliyuncs.com/WechatQY/scripts/HideWechatOptionMenu.js"></script>
+    <script language="javascript">
+        let theme;
+        // 初始化swiper
+        var swiper = new Swiper('.swiper-container', {
+            observer:true,
+            observeParents:true,
+            noSwiping : true,
+            on: {
+                slideChangeTransitionEnd: function(){
+                    let activeItem = this.activeIndex
+                    if(activeItem == 2){
+                        $('.main').css({
+                            'min-height':'100vh',
+                            'height':'auto',
+                            'padding-bottom':'2.5rem'
+                        })
+                        detail.showIcon()
+                    }else{
+                        $('.main').css({
+                            'height':'100vh',
+                            'padding-bottom':'0px'
+                        })
+                        detail.hideIcon()
+                    }
+                },
+            },
+        })
+
+        $(function(){
+            detail.init()
+            store.getUserInfo()
+            let squareList = detail.initSquare()
+            if(is.array(squareList)){
+                squareList.map((v,i) => {
+                    $('.type-group').append('<img class="type-item" src="'+v.icon+'" data-id="'+v.id+'" data-content="'+v.content+'" onclick="detail.showDetail(this)" alt="">')
+                })
+            }
+        })
+
+        // 滚动轴判断
+        $(window).scroll(function(){
+            let scrollTop = $(this).scrollTop();
+            let scrollHeight = $('body').height();
+            let windowHeight = $(this).height();
+            let isallHeight = Math.ceil(scrollTop + windowHeight)
+        　　if(isallHeight == scrollHeight){
+                detail.hideIcon()
+        　　}else{
+                detail.showIcon()
+            }
+        });
+    </script>
+</body>
+
+</html>

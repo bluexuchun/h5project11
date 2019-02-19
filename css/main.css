@@ -1,0 +1,91 @@
+.main{
+    width:100%;
+    height:100%;
+}
+.square-top{
+    width:100%;
+    height:78%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.square-item{
+    width:50%;
+    height:50%;
+    box-sizing: border-box;
+}
+.square-right{
+    padding-right:.2rem;
+}
+.square-left{
+    padding-left:.2rem;
+}
+.squaret{
+    padding-bottom:.2rem;
+}
+.squareb{
+    padding-top:.2rem;
+}
+.square-bottom{
+    width:100%;
+    height:22%;
+    box-sizing: border-box;
+    padding-top:.4rem;
+    position: relative;
+}
+.square-icon{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.square-box{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.square-btn{
+    width:70%;
+    height:2rem;
+    object-fit: cover;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-1rem;
+    margin-left:-35%;
+    z-index:3;
+}
+.square-sbtn{
+    width:60%;
+    margin-left:-30%;
+}
+.square-shadow{
+    width:100%;
+    height:100%;
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    z-index:1;
+    top:0px;
+    left:0px;
+}
+.square-model{
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index:10;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+}
+.icon-order{
+    width:9.5rem;
+    margin-bottom:5rem;
+}
+.order-btn{
+    width:6rem;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>ROUGE COCO FLASH</title>
+    <script src="js/util.js"></script>
+    <script src="js/tongji.js"></script>
+    <link rel="stylesheet" href="css/video-js.css">
+    <link rel="stylesheet" href="css/video.css">
+  </head>
+  <body>
+    <div class="video" id="main">
+        <div class="video-box">
+          <video id="my-video" class="video-js" controls preload="auto" autoplay="autoplay" style="width:100%;height:100%;"
+            poster="./img/video/video-cover.png" data-setup="{}" x5-video-player-type='h5' x5-video-player-fullscreen='true' webkit-playsinline="true" playsinline="true">
+            <source src="https://play.widiazine.cn/upload/videos/2019/02/QOyRlA18yC9nHTP4raX4_01_09f0bca1c3235b60c69231a8b99062b6_video.mp4" type='video/mp4'>
+          </video>
+        </div>
+        <div class="video-tips">
+          <img class="video-word" src="./img/video/video-tips.png" alt="">
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/watermake.js"></script>
+    <script src="js/store.js"></script>
+    <script type="text/javascript">
+      
+      $(function(){
+        store.setUserInfo()
+      })
+
+      let options = {}
+      let player = videojs('my-video', options, function onPlayerReady() {
+        this.play();
+        this.on('ended', function() {
+          location.href = './choose.html'
+        });
+      });
+
+      document.addEventListener("WeixinJSBridgeReady", function () { 
+        playAudio()
+      }, false); 
+
+      //监听设备横屏竖屏
+      let evt = "onorientationchange" in window ? "orientationchange" : "resize";
+	    window.addEventListener(evt,resize,false);
+      function resize(fals) {
+        if(window.orientation == 0 || window.orientation == 180) {
+            
+          }else {
+            videojs('my-video').requestFullscreen()
+        }
+      }
+
+      function playAudio(){
+        videojs('my-video').play()
+      }
+    </script>
+  </body>
+</html>

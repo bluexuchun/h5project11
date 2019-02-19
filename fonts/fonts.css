@@ -1,0 +1,164 @@
+/*声明 使用Chanel字体*/
+@font-face {
+  font-family: "ABChanel-PB-Regular-L";
+  src: url("http://chanel.widiazine.cn/fonts/ABChanel-PB-Regular-L.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-Regular-L.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-Regular-L.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-Regular-L.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-Regular-L.svg") format("svg");
+}
+
+@font-face {
+  font-family: "ABChanel-PB-Regular-M";
+  src: url("http://chanel.widiazine.cn/fonts/ABChanel-PB-Regular-M.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-Regular-M.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-Regular-M.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-Regular-M.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-Regular-M.svg") format("svg");
+}
+
+@font-face {
+  font-family: "ABChanel-PB-Regular-S";
+  src: url("http://chanel.widiazine.cn/fonts/ABChanel-PB-Regular-S.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-Regular-S.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-Regular-S.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-Regular-S.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-Regular-S.svg") format("svg");
+}
+
+@font-face {
+  font-family: "ABChanel-PB-SemiBold-L";
+  src: url("http://chanel.widiazine.cn/fonts/ABChanel-PB-SemiBold-L.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-SemiBold-L.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-SemiBold-L.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-SemiBold-L.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-SemiBold-L.svg") format("svg");
+}
+
+@font-face {
+  font-family: "ABChanel-PB-SemiBold-M";
+  src: url("http://chanel.widiazine.cn/fonts/ABChanel-PB-SemiBold-M.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-SemiBold-M.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-SemiBold-M.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-SemiBold-M.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-SemiBold-M.svg") format("svg");
+}
+
+@font-face {
+  font-family: "ABChanel-PB-SemiBold-S";
+  src: url("http://chanel.widiazine.cn/fonts/ABChanel-PB-SemiBold-S.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-SemiBold-S.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-SemiBold-S.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-SemiBold-S.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel-PB-SemiBold-S.svg") format("svg");
+}
+
+@font-face {
+  font-family: "ABChanel2014-Bd";
+  src: url("http://chanel.widiazine.cn/fonts/ABChanel2014-Bd.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014-Bd.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014-Bd.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014-Bd.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014-Bd.svg") format("svg");
+}
+
+@font-face {
+  font-family: "ABChanel2014-Cn";
+  src: url("http://chanel.widiazine.cn/fonts/ABChanel2014-Cn.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014-Cn.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014-Cn.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014-Cn.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014-Cn.svg") format("svg");
+}
+
+@font-face {
+  font-family: "ABChanel2014-It";
+  src: url("http://chanel.widiazine.cn/fonts/ABChanel2014-It.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014-It.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014-It.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014-It.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014-It.svg") format("svg");
+}
+
+@font-face {
+  font-family: "ABChanel2014-Reg";
+  src: url("http://chanel.widiazine.cn/fonts/ABChanel2014-Reg.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014-Reg.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014-Reg.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014-Reg.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014-Reg.svg") format("svg");
+}
+
+
+@font-face {
+  font-family: "ABChanel2014Couture-Cn";
+  src: url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-Cn.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-Cn.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-Cn.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-Cn.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-Cn.svg") format("svg");
+}
+
+@font-face {
+  font-family: "ABChanel2014Couture-ExLig";
+  src: url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-ExLig.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-ExLig.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-ExLig.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-ExLig.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-ExLig.svg") format("svg");
+}
+
+@font-face {
+  font-family: "ABChanel2014Couture-Lig";
+  src: url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-Lig.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-Lig.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-Lig.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-Lig.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-Lig.svg") format("svg");
+}
+
+@font-face {
+  font-family: "ABChanel2014Couture-Reg";
+  src: url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-Reg.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-Reg.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-Reg.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-Reg.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-Reg.svg") format("svg");
+}
+
+@font-face {
+  font-family: "ABChanel2014Couture-SmBd";
+  src: url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-SmBd.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-SmBd.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-SmBd.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-SmBd.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Couture-SmBd.svg") format("svg");
+}
+
+@font-face {
+  font-family: "ABChanel2014Logos";
+  src: url("http://chanel.widiazine.cn/fonts/ABChanel2014Logos.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Logos.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Logos.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Logos.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/ABChanel2014Logos.svg") format("svg");
+}
+
+/*声明 使用Chanel字体*/
+@font-face {
+  font-family: "STHeiti";
+  src: url("http://chanel.widiazine.cn/fonts/STHeiti.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/STHeiti.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/STHeiti.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/STHeiti.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/STHeiti.svg") format("svg");
+}
+
+@font-face {
+  font-family: "STXihei";
+  src: url("http://chanel.widiazine.cn/fonts/STXihei.woff2") format("woff2"),
+       url("http://chanel.widiazine.cn/fonts/STXihei.woff") format("woff"),
+       url("http://chanel.widiazine.cn/fonts/STXihei.ttf") format("truetype"),
+       url("http://chanel.widiazine.cn/fonts/STXihei.eot") format("embedded-opentype"),
+       url("http://chanel.widiazine.cn/fonts/STXihei.svg") format("svg");
+}

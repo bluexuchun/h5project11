@@ -1,0 +1,143 @@
+.main{
+    width: 100%;
+    height: 100%;
+}
+.swiper-container,.swiper-container-vh {
+    width: 100%;
+    height: 100%;
+}
+.color-container{
+    height:80%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    align-items: center;
+}
+.colorGroup{
+    width: 100%;
+    height:100%;
+    box-sizing: border-box;
+    padding:2.5rem 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start
+}
+.colorItem{
+    width:33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:1rem;
+}
+.colorIcon{
+    width:5.6rem;
+    font-size:1rem;
+}
+.main-tips{
+    width:100%;
+    height:20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+    font-size:1.1rem;
+    letter-spacing: .15rem;
+    box-sizing: border-box;
+    padding-top:.8rem;
+    font-family: 'ABChanel-PB-Regular-L'
+}
+.tips-word{
+    margin:.5rem 0rem .8rem;
+}
+.tips-up{
+    width:1.6rem;
+}
+.cover-img{
+    width:100%;
+}
+.guess-box{
+    width: 100%;
+    display: flex;
+    flex:1;
+    box-sizing: border-box;
+    padding:.4rem .8rem;
+    position: relative;
+}
+.guess-img{
+    width:100%;
+    height:10%;
+}
+.guess-btn{
+    width:100%;
+    position: absolute;
+    bottom:1.8rem;
+    left:0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.model-relative{
+    position: relative;
+}
+.btnAction{
+    width:6.5rem;
+    height:2.4rem;
+    line-height: 2.4rem;
+    background: #DCDCDC;
+    border-radius:20px;
+    font-size:1.2rem;
+    margin:0rem 1.3rem;
+    letter-spacing: .1rem;
+    font-family: 'STHeiti';
+}
+.btnAction-active{
+    color:#fff;
+}
+.model{
+    width: 100%;
+    height:100vh;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background: rgba(0,0,0,0.6);
+    z-index:2;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.model-bg{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index:3;
+}
+.model-box{
+    width:85%;
+    position: relative;
+    z-index:4;
+}
+.model-img{
+    width: 100%;
+}
+.touchbg{
+    width:100%;
+    height:100vh;
+    position: fixed;
+    top:0px;
+    left:0px;
+    background: rgba(0,0,0,0.7);
+    z-index:10;
+}
+.icon-touch{
+    width: 8rem;
+    position: absolute;
+    bottom: 9rem;
+    right: 6rem;
+}

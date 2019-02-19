@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <script src="js/util.js"></script>
+    <script src="js/tongji.js"></script>
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/choose.css">
+    <script src="js/media.min.js"></script>
+    <title>ROUGE COCO FLASH</title>
+  </head>
+  <body>
+    <div class="main" id="main">
+        <div class="touchbg" onclick="colorGroup.hidebg()">
+            <img class="icon-touch" src="./img/icon_touch.png" alt="">
+        </div>
+        <div class="swiper-container-vh">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <!-- 色号列表 -->
+                    <div class="swiper-container color-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="colorGroup group1">
+                                        
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="colorGroup group2">
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 选择色号得文字 -->
+                    <div class="main-tips">
+                        <div class="tips-color">#53 时髦</div>
+                        <div class="tips-word">下拉查看你的专属色号推文</div>
+                        <img class="tips-up" src="./img/icon_up.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide model-relative">
+                    <!-- 弹窗 -->
+                    <div class="model">
+                        <div class="model-bg" onclick="colorGroup.hideModel(this)"></div>
+                        <div class="model-box">
+                            <img class="model-img" onclick="colorGroup.linkTo('./main.html')" src="./img/model_img.png" alt="">
+                        </div>
+                    </div>
+                    <!-- 封面图 -->
+                    <img class="cover-img" src="./img/cover.png" alt="">
+                    <!-- 猜测题目 -->
+                    <div class="guess-box">
+                        <img class="guess-img" src="./img/guess.png" alt="">
+                        <div class="guess-btn">
+                            <div class="btnAction" onclick="colorGroup.showModel(false,this)">雾面哑光</div>
+                            <div class="btnAction" onclick="colorGroup.showModel(false,this)">微光泽</div>
+                            <div class="btnAction" onclick="colorGroup.showModel(true,this)">高光泽</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/watermake.js"></script>
+    <script src="js/colorGroup.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/is.js"></script>
+  </body>
+  <script>
+    // 定义每个swiper色号的数量
+    const colorNums = 15
+    // 定义初始class
+    const colorClass = 'group'
+    // 色值
+    let theme
+          
+    var swiper = new Swiper('.swiper-container', {
+        
+    })
+    var swiperh = new Swiper('.swiper-container-vh', {
+      direction: 'vertical'
+    });
+
+    $(function(){
+        store.getUserInfo()
+        let colorAry = colorGroup.init()
+        if(is.array(colorAry)){
+            colorAry.map((v,i) => {
+                let swiperIndex = Math.floor(i / colorNums)
+                let swiperClass = colorClass + (swiperIndex + 1)
+                let items = '<div class="colorItem" data-name="'+v.name+'" data-color="'+v.color+'" onclick="colorGroup.chooseColor(this)"><img class="colorIcon" src='+v.icon+' /></div>'
+                $('.'+swiperClass).append(items)
+            })
+        }
+    })
+    
+    
+  </script>
+</html>
