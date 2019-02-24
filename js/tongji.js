@@ -1,7 +1,7 @@
 let URL = location.href
 let userId = getName(URL,'userid')
 
-if(userId == undefined || userId == '' || userId == null || userId){
+if(userId == undefined || userId == '' || userId == null){
   userId = getStorageSync("chanel_userid")
 }else{
   setStorageSync("chanel_userid",userId)

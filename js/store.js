@@ -10,7 +10,6 @@ let store = (function(){
         let url = decodeURI(location.href);
         console.log(url)
         let name = getName(url,"userName");
-        alert(name)
         setStorageSync("chanel_userName",name)
         if(name == undefined || name == '' || name == null){
             getUserInfo()

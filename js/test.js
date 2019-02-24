@@ -215,7 +215,7 @@ let test = (function(){
                 }
                 $.ajax({
                     type: 'GET',
-                    url: 'http://wechanel.eweixin.biz/OutsideInterface/UpdateCoursePoint.asmx/UpdateUserCoursePoint?UserID=' + userid + '&CourseID=110&ChapterID=1&Point=' + res.sum,
+                    url: 'http://wechanel.eweixin.biz/OutsideInterface/UpdateCoursePoint.asmx/UpdateUserCoursePoint?UserID=' + userid + '&CourseID=118&ChapterID=1&Point=' + res.sum,
                     dataType: 'json',
                     error: function(error) {
                       var text = error.responseText;
@@ -233,7 +233,7 @@ let test = (function(){
                             code: code,
                             message: message,
                             sum: res.sum,
-                            courseid: 110,
+                            courseid: 118,
                             content: answers
                           },
                           dataType: 'json',

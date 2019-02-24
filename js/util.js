@@ -8,9 +8,6 @@ function getName(url,name){
       var getName = deArray[i].split('=');
       if(getName[0] == name){
         getValue = getName[1];
-        break;
-      }else{
-        return false;
       }
     }
     return getValue;
